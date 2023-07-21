@@ -1,11 +1,11 @@
-const numeros = [0, 5, 3, 69, 45, 18, 13, 2]; //tamanho 8
+/* um programa que calcula e imprime na tela  a soma dos itens de um array*/
 
-let soma = 0;
+const numero = [2, 8, 15, 6, 12];
 
-for (let i = 0; i < numeros.length; i++) {
-    //sera executado para i de 0 até 7 | 8 nao sera mais executado
-    soma = soma + numeros[i];
-    //soma += numeros[i]
+let soma=0;
+let i = 0;
+while ( i < numero.length) {
+  soma += numero[i];
+  i++
 }
-
 console.log(soma);
