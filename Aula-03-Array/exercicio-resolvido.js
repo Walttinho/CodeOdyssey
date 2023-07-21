@@ -7,30 +7,29 @@ adicione um pais ao inicio da lista - ok
 imprima a lista - ok
 imprima o ultimo pais da lista - ok
 imprima o segundo pais da lista - ok
-imprimao pais de indice 2 da lista - ok
+imprima o pais de indice 2 da lista - ok
 */
 
-
-const paises = ["Brasil", "Dinamarca", "França", "USA", "Alemanha"]
-console.log(paises)
+const paises = ["Brasil", "Dinamarca", "França", "USA", "Alemanha"];
+console.log(paises);
 
 //paises[paises.length] = "Argentina"
-paises.push("Bolivia")
+paises.push("Bolivia");
 
-console.log(paises)
+console.log(paises);
 
-paises.pop()
+paises.pop();
 
-console.log(paises)
+console.log(paises);
 
-paises.unshift("Argentina")
+paises.unshift("Argentina");
 
-console.log(paises)
+console.log(paises);
 
-paises.shift()
+paises.shift();
 
-console.log(paises)
+console.log(paises);
 
-console.log(paises[paises.length-1])
-console.log(paises[1])
-console.log(paises[2])
+console.log(paises[paises.length - 1]);
+console.log(paises[1]);
+console.log(paises[2]);
