@@ -1,12 +1,7 @@
-//criando um array de 5 numeros
-
-const numeros = [0, 3, 18, 2, 11];
-
-let i = 0;
-
-//enquanto o i for menor que o tamanho do array
-while (i < numeros.length) { 
-    //executar isso
-    console.log(numeros[i]);
-    i++;
+/*Faça um programa que imprima todos os elementos de um array que contem alguns numero quaisquer */ const array =
+  [1, 8, 5, 6, 7, 9, 4, 3];
+let indice = 0;
+while (indice < array.length) {
+  console.log(array[indice]);
+  indice++;
 }
