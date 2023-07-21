@@ -1,27 +1,36 @@
-// crie uma lista com 5 países
+/*crie um array com 5 paises - ok
+adicione um pais ao fim da lista - ok
+imprima a lista - ok
+remova o pais do fim da lista - ok
+imprima a lista - ok
+adicione um pais ao inicio da lista - ok
+imprima a lista - ok
+imprima o ultimo pais da lista - ok
+imprima o segundo pais da lista - ok
+imprimao pais de indice 2 da lista - ok
+*/
 
-const paises = ['Brasil', 'Argentina', 'Espanha', 'EUA', 'Chile'];
-console.log(paises);
 
-//remova um pais do fim da lista
+const paises = ["Brasil", "Dinamarca", "França", "USA", "Alemanha"]
+console.log(paises)
 
-paises.pop();
-console.log(paises);
+//paises[paises.length] = "Argentina"
+paises.push("Bolivia")
 
-//adicionar um pais ao inicio da lista
-paises.unshift('Chile');
-console.log(paises);
+console.log(paises)
 
-//removendo um pais do inicio da lista
-paises.shift();
-console.log(paises);
+paises.pop()
 
-//imprimir o ultimo item da lista
-const ultimo = paises[paises.length - 1];
-console.log(ultimo);
+console.log(paises)
 
-//imprima o segundo pais da lista na tela
-console.log(paises[1]);
+paises.unshift("Argentina")
 
-//imprima o pais de indice 2
-console.log(paises[2]);
+console.log(paises)
+
+paises.shift()
+
+console.log(paises)
+
+console.log(paises[paises.length-1])
+console.log(paises[1])
+console.log(paises[2])
