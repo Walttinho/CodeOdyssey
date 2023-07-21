@@ -1,11 +1,12 @@
-const palavra = 'abracadabraaaa'; //5 letras a
+//quantas letras "a" existem em uma determinada palavra
+const palavra = "abracadabra"
+let soma = 0
+const letra = "a"
 
-let quantidade = 0;
-
-for (let letra of palavra) {
-    if (letra === 'a') {
-        quantidade++;
-    }
-}
-
-console.log(quantidade);
+for (let i of palavra) {
+  if(i === letra){
+    ++soma
+  }
+  }
+  const plural = soma<2?"letra":"letras"
+  console.log(`Existem ${soma} ${plural} "${letra}" na palavra ${palavra}`)
