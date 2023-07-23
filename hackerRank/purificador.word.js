@@ -28,3 +28,6 @@ for (palavra of stringCorrompida){
 }
 
 console.log (palavraLimpa)
+
+
+//https://www.hackerrank.com/contests/arrays-e-loops/challenges/purificacao
