@@ -5,3 +5,12 @@ const produtos = [
     { nome: "banana", preco: 320 },
 ];
 
+const novoArray = produtos.map((produto)=>{
+    return {
+        nome:`${produto.nome}` ,
+        preco:`${produto.preco}`,
+        desconto: `${produto.preco *0.1}`
+    }
+})
+
+console.log(novoArray)
