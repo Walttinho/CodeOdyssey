@@ -1,11 +1,19 @@
-const fs = require('fs');
+const fs = require('fs').promises;
+
 
 (async function() {
-  const arquivoJson = await fs.promises.readFile('teste.json');
-  const pessoas = JSON.parse(arquivoJson.toString());
+  try {
+    const arquivoJson = await fs.readFile("./teste.json");
+    const pessoas = JSON.parse(arquivoJson.toString());
 
-  pessoas.push({nome: 'testew'});
+    pessoas.push({ nome: 'teste' });
 
-  const arrayJason = JSON.stringify(pessoas);
-  console.log(arrayJason);
+    const novoJson = JSON.stringify(pessoas, null, 2);
+
+    await fs.writeFile("./teste.json", novoJson);  // Escreve o JSON de volta para o arquivo
+
+    console.log("JSON atualizado:", novoJson);
+  } catch (error) {
+    console.error("Erro:", error);
+  }
 })();
