@@ -1,0 +1,1 @@
+SELECT compositor, composicao, tempo FROM musicas WHERE tempo BETWEEN 120 AND 300 AND compositor <> 'Mozart';

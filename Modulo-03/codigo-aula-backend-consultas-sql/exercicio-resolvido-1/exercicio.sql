@@ -1,0 +1,1 @@
+SELECT * FROM musicas WHERE tempo > 120 LIMIT 10
